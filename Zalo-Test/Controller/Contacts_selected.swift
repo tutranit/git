@@ -12,33 +12,50 @@ class Contacts_selected: UIViewController,UITableViewDataSource {
     
     
 
+    let NameHeader = [" ","Close friends","Recent updates","All contacts"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
     }
 
-    // MARK: - Table view data source
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        switch (section) {
+        case 0:
+            return " "
+        case 1:
+            return "Close friends"
+        case 2:
+            return "Recent updates"
+        default:
+            return "All contacts"
+        }
+    }
 
     func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return NameHeader.count
     }
 
    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+    
+    switch section {
+    case 0:
+        return 1
+    case 1:
+        return 1
+    default:
+        return 10
+    }
+    
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CellContacts", for: indexPath)
+        let identifirer = indexPath.section == 0 ? "Cell1" : indexPath.section == 1 ? "Cell2" : "Cell3"
+        let cell = tableView.dequeueReusableCell(withIdentifier: identifirer, for: indexPath)
         
-        //cell.imageView?.image = UIImage(named: "search")
-      //  cell.textLabel?.text = self.name[indexPath.section][indexPath.row]
+       
         
         return cell    }
     

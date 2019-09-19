@@ -18,11 +18,12 @@ class ContactsController: UIViewController,UITableViewDataSource {
         super.viewDidLoad()
 
         setUpNavigationButton()
-       
+       segmentControl.selectedSegmentIndex = 0
+        addViewController(asChildViewController: Contacts_selected1)
         // Do any additional setup after loading the view.
     }
     @IBAction func IndexChange(_ sender: Any) {
-        if segmentControl.selectedSegmentIndex == 1 {
+        if segmentControl.selectedSegmentIndex == 0 {
             remove(asChildViewController: OFF_selected1)
             addViewController(asChildViewController: Contacts_selected1)
         }
