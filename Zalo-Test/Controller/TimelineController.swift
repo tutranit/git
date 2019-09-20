@@ -8,7 +8,8 @@
 
 import UIKit
 
-class TimelineController: UIViewController {
+class TimelineController: UIViewController,UITableViewDataSource {
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,5 +43,25 @@ class TimelineController: UIViewController {
         
     }
 
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return " "
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 4
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if section == 3{
+            return 5
+        }
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let Identifier = indexPath.section == 0 ? "Cell1" : indexPath.section == 1 ? "Cell2" : indexPath.section == 2 ? "Cell3" : "Cell4"
+        let cell = tableView.dequeueReusableCell(withIdentifier: Identifier, for: indexPath)
+        return cell
+    }
+    
 
 }
