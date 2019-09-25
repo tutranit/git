@@ -43,8 +43,10 @@ class OFFCIAL_selected: UIViewController,UITableViewDataSource {
         
         if indexPath.section == 1{
             cell.textLabel?.text = name[indexPath.row]
+
             cell.imageView?.image = UIImage(named: ArrayImage[indexPath.row])
-            cell.imageView?.layer.cornerRadius = 5
+            cell.imageView?.layer.cornerRadius = 30
+            cell.imageView?.clipsToBounds = true
         }
         
         return cell

@@ -35,11 +35,15 @@ class ContactsController: UIViewController,UITableViewDataSource {
     }
 
     func setUpNavigationButton(){
+        let searchbar = UISearchBar()
+               searchbar.placeholder = "Search friends, messages"
+               
+               navigationItem.titleView = searchbar
         let leftBtnNavigation = UIBarButtonItem(image: UIImage(named: "search"), style: .plain, target: self, action: #selector(searchBtn))
         
         let rightBtnNavigation = UIBarButtonItem(image: UIImage(named: "addContacts"), style: .plain, target: self, action: #selector(AddContacts))
         navigationController?.navigationBar.backgroundColor = #colorLiteral(red: 0, green: 0.4784313725, blue: 1, alpha: 1)
-        navigationItem.leftBarButtonItem = leftBtnNavigation
+//        navigationItem.leftBarButtonItem = leftBtnNavigation
         navigationItem.rightBarButtonItem = rightBtnNavigation
     }
     
@@ -51,6 +55,9 @@ class ContactsController: UIViewController,UITableViewDataSource {
         
     }
     
+    @IBAction func BtnAdd(_ sender: Any) {
+        print("a")
+    }
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         if section == 0 {
             return " "

@@ -21,17 +21,27 @@ class GroupsController: UIViewController,UITableViewDataSource,UITableViewDelega
     }
     
     func setUpBarButton(){
+        let searchbar = UISearchBar()
+               searchbar.placeholder = "Search friends, messages"
+               
+               navigationItem.titleView = searchbar
         let leftButtonNavigation = UIBarButtonItem(image: UIImage(named: "search"), style: .plain, target: self, action: #selector(SearchBtn))
         
         let rightButtonNavigation = UIBarButtonItem(image: UIImage(named: "messageAdd"), style: .plain, target: self, action: #selector(AddMessageBtn))
         
         let nextRightButtonNavigation  = UIBarButtonItem(image: UIImage(named: "AddIcon"), style: .plain, target: self, action: #selector(AddBtn))
         navigationController?.navigationBar.backgroundColor = #colorLiteral(red: 0, green: 0.4784313725, blue: 1, alpha: 1)
-        navigationItem.leftBarButtonItem = leftButtonNavigation
+//        navigationItem.leftBarButtonItem = leftButtonNavigation
         navigationItem.rightBarButtonItems = [rightButtonNavigation,nextRightButtonNavigation]
         
     }
     
+    @IBAction func BtnCalendar(_ sender: Any) {
+        print("a")
+    }
+    @IBAction func BtnReminder(_ sender: Any) {
+        print("b")
+    }
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         if section == 0{
             return " "
@@ -56,7 +66,7 @@ class GroupsController: UIViewController,UITableViewDataSource,UITableViewDelega
     
     func setupButton(){
         let CreateGrBtn = UIButton()
-        CreateGrBtn
+        
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -78,8 +88,10 @@ class GroupsController: UIViewController,UITableViewDataSource,UITableViewDelega
             cell.imageView?.image = UIImage(named: ArrayImage[indexPath.row])
             cell.textLabel?.text = ArrayName[indexPath.row]
             
-            cell.imageView?.frame = CGRect(x: 0, y: 0, width: 32, height: 32)
+//            cell.imageView?.frame = CGRect(x: 0, y: 0, width: 32, height: 32)
             cell.imageView?.layer.cornerRadius = 5
+//            cell.imageView?.clipsToBounds = true
+//            cell.imageView?.layer.masksToBounds = true
             
         }
         
@@ -87,5 +99,4 @@ class GroupsController: UIViewController,UITableViewDataSource,UITableViewDelega
     }
 
     
-
 }
