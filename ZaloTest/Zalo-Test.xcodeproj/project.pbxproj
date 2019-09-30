@@ -1,0 +1,381 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		181A086D232F849E004363F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181A086C232F849E004363F7 /* AppDelegate.swift */; };
+		181A086F232F849E004363F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181A086E232F849E004363F7 /* ViewController.swift */; };
+		181A0872232F849E004363F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181A0870232F849E004363F7 /* Main.storyboard */; };
+		181A0874232F84A0004363F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 181A0873232F84A0004363F7 /* Assets.xcassets */; };
+		181A0877232F84A0004363F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181A0875232F84A0004363F7 /* LaunchScreen.storyboard */; };
+		181A087F232FB8D0004363F7 /* ContactsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181A087E232FB8D0004363F7 /* ContactsController.swift */; };
+		181A0882232FB8F0004363F7 /* GroupsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181A0881232FB8F0004363F7 /* GroupsController.swift */; };
+		181A0884232FB909004363F7 /* TimelineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181A0883232FB909004363F7 /* TimelineController.swift */; };
+		181A0886232FB92A004363F7 /* MoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181A0885232FB929004363F7 /* MoreController.swift */; };
+		181E3CD72332267C0068D8E3 /* Contacts_selected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181E3CD62332267C0068D8E3 /* Contacts_selected.swift */; };
+		181E3CD9233226990068D8E3 /* OFFCIAL_selected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181E3CD8233226990068D8E3 /* OFFCIAL_selected.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		181A0869232F849E004363F7 /* Zalo-Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zalo-Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		181A086C232F849E004363F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		181A086E232F849E004363F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		181A0871232F849E004363F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		181A0873232F84A0004363F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		181A0876232F84A0004363F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		181A0878232F84A0004363F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		181A087E232FB8D0004363F7 /* ContactsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsController.swift; sourceTree = "<group>"; };
+		181A0881232FB8F0004363F7 /* GroupsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsController.swift; sourceTree = "<group>"; };
+		181A0883232FB909004363F7 /* TimelineController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineController.swift; sourceTree = "<group>"; };
+		181A0885232FB929004363F7 /* MoreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreController.swift; sourceTree = "<group>"; };
+		181E3CD62332267C0068D8E3 /* Contacts_selected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacts_selected.swift; sourceTree = "<group>"; };
+		181E3CD8233226990068D8E3 /* OFFCIAL_selected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OFFCIAL_selected.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		181A0866232F849E004363F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		181A0860232F849E004363F7 = {
+			isa = PBXGroup;
+			children = (
+				181A086B232F849E004363F7 /* Zalo-Test */,
+				181A086A232F849E004363F7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		181A086A232F849E004363F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				181A0869232F849E004363F7 /* Zalo-Test.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		181A086B232F849E004363F7 /* Zalo-Test */ = {
+			isa = PBXGroup;
+			children = (
+				181A0887232FCA05004363F7 /* TableView */,
+				181A0880232FB8D3004363F7 /* Controller */,
+				181A086C232F849E004363F7 /* AppDelegate.swift */,
+				181A0870232F849E004363F7 /* Main.storyboard */,
+				181A0873232F84A0004363F7 /* Assets.xcassets */,
+				181A0875232F84A0004363F7 /* LaunchScreen.storyboard */,
+				181A0878232F84A0004363F7 /* Info.plist */,
+			);
+			path = "Zalo-Test";
+			sourceTree = "<group>";
+		};
+		181A0880232FB8D3004363F7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				181A086E232F849E004363F7 /* ViewController.swift */,
+				181A087E232FB8D0004363F7 /* ContactsController.swift */,
+				181A0881232FB8F0004363F7 /* GroupsController.swift */,
+				181A0883232FB909004363F7 /* TimelineController.swift */,
+				181A0885232FB929004363F7 /* MoreController.swift */,
+				181E3CD62332267C0068D8E3 /* Contacts_selected.swift */,
+				181E3CD8233226990068D8E3 /* OFFCIAL_selected.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		181A0887232FCA05004363F7 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		181A0868232F849E004363F7 /* Zalo-Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 181A087B232F84A0004363F7 /* Build configuration list for PBXNativeTarget "Zalo-Test" */;
+			buildPhases = (
+				181A0865232F849E004363F7 /* Sources */,
+				181A0866232F849E004363F7 /* Frameworks */,
+				181A0867232F849E004363F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Zalo-Test";
+			productName = "Zalo-Test";
+			productReference = 181A0869232F849E004363F7 /* Zalo-Test.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		181A0861232F849E004363F7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					181A0868232F849E004363F7 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = 181A0864232F849E004363F7 /* Build configuration list for PBXProject "Zalo-Test" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 181A0860232F849E004363F7;
+			productRefGroup = 181A086A232F849E004363F7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				181A0868232F849E004363F7 /* Zalo-Test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		181A0867232F849E004363F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				181A0877232F84A0004363F7 /* LaunchScreen.storyboard in Resources */,
+				181A0874232F84A0004363F7 /* Assets.xcassets in Resources */,
+				181A0872232F849E004363F7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		181A0865232F849E004363F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				181A086F232F849E004363F7 /* ViewController.swift in Sources */,
+				181A0882232FB8F0004363F7 /* GroupsController.swift in Sources */,
+				181A087F232FB8D0004363F7 /* ContactsController.swift in Sources */,
+				181A086D232F849E004363F7 /* AppDelegate.swift in Sources */,
+				181A0886232FB92A004363F7 /* MoreController.swift in Sources */,
+				181E3CD9233226990068D8E3 /* OFFCIAL_selected.swift in Sources */,
+				181A0884232FB909004363F7 /* TimelineController.swift in Sources */,
+				181E3CD72332267C0068D8E3 /* Contacts_selected.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		181A0870232F849E004363F7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				181A0871232F849E004363F7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		181A0875232F84A0004363F7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				181A0876232F84A0004363F7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		181A0879232F84A0004363F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		181A087A232F84A0004363F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		181A087C232F84A0004363F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L5US95BXQW;
+				INFOPLIST_FILE = "Zalo-Test/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tutranit96.Zalo-Test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		181A087D232F84A0004363F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L5US95BXQW;
+				INFOPLIST_FILE = "Zalo-Test/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tutranit96.Zalo-Test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		181A0864232F849E004363F7 /* Build configuration list for PBXProject "Zalo-Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				181A0879232F84A0004363F7 /* Debug */,
+				181A087A232F84A0004363F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		181A087B232F84A0004363F7 /* Build configuration list for PBXNativeTarget "Zalo-Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				181A087C232F84A0004363F7 /* Debug */,
+				181A087D232F84A0004363F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 181A0861232F849E004363F7 /* Project object */;
+}
